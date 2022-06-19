@@ -1,0 +1,162 @@
+/* Reset css */
+:root{
+    --main-font: Lobster;
+    --font-size: 16px;
+    --container-width: 1200px;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url(../Img/imagen.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Menu */
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    background-color: #020024;
+    color: #faedcd;
+}
+
+.header h1, h2{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section {
+    padding: 2rem;
+    padding-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    max-width: var(--container-width);
+    min-height: 100vh;
+    text-align: center;
+}
+
+.box {
+    padding: 15px;
+    border: 5px solid #ccd5ae;
+    margin: 0; 
+}
+
+.section h2 {
+    background-color: #020024;
+    color: #ccd5ae;
+    font-size: 30px;
+}
+
+.section p {
+    background-color: #020024;
+    color: white;
+    font-size: 25px;
+    text-align: start;
+}
+
+.ion ion-icon {
+    padding: 30px;
+    margin: 15px;
+    font-size: 96px;
+    color: #020024;
+}
+
+.panel {
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(2,0,36);
+    transition: transform 0.5s ease;
+    transform: translate(-100%, 0);
+}
+
+.panel.is-active {
+    transform: translate(0,0);
+}
+
+.panel-btn {
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    right: 1vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #faedcd;
+}
+
+.menu {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.menu a{
+    padding: 2rem;
+    width: inherit;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #faedcd;
+    transition: all 0.5s ease;
+}
+
+.menu a:hover {
+    font-weight: bold;
+    color: #ccd5ae;
+}
+
+/* Footers */
+
+.contacto {
+    background-color: #020024;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 1px;
+}
+
+.contacto h3 {
+    color: #faedcd;
+}
+
+.contacto a {
+    font-size: 1.5rem;
+    width: inherit;
+    display: block;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: rgb(250, 237, 205, 1);
+}
